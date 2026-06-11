@@ -16,7 +16,7 @@ pipeline {
       steps {
         git branch: 'main',
             credentialsId: 'GITHUB_TOKEN',
-            url: 'https://github.com/YOUR_USERNAME/YOUR_REPO.git'
+            url: 'https://github.com/kumarlogesh275-spec/assessment-.git'
       }
     }
 

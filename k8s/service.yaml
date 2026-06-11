@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: flask-app-service
+  namespace: flask-app
+  labels:
+    app: flask-app  # Prometheus will look for this label
+spec:
+  type: LoadBalancer
+  selector:
+    app: flask-app
+  ports:
+    - name: http    # This name is crucial!
+      protocol: TCP
+      port: 5000
+      targetPort: 5000

@@ -7,7 +7,7 @@ variable "cluster_name" {
 }
 
 variable "key_name" {
-  default     = "wordpress"
+  default     = "mumbai"
   description = "EC2 key pair name for SSH into Jenkins"
 }
 
